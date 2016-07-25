@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Conversion View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="temperature_converter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="temperature_converter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -41,24 +41,31 @@
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlU-TR-PIY">
-                                <rect key="frame" x="132" y="50" width="111" height="84"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HXq-Li-wSz">
+                                <rect key="frame" x="123" y="28" width="130" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="lPc-23-dXv"/>
+                                </constraints>
+                                <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="fahrenheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="7DP-u7-62g"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ZlU-TR-PIY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="0RB-7M-T2d"/>
                             <constraint firstItem="lXx-Lk-b8M" firstAttribute="centerX" secondItem="ont-K0-IRc" secondAttribute="centerX" id="4gj-H6-8CZ"/>
                             <constraint firstItem="ont-K0-IRc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="110" id="5kW-46-Ouz"/>
                             <constraint firstItem="zDb-9R-SRp" firstAttribute="top" secondItem="ont-K0-IRc" secondAttribute="bottom" constant="8" id="J6M-l1-hOp"/>
                             <constraint firstItem="lXx-Lk-b8M" firstAttribute="top" secondItem="zDb-9R-SRp" secondAttribute="bottom" constant="90" id="MVs-6O-Hpy"/>
-                            <constraint firstItem="ZlU-TR-PIY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vtd-ir-X7b"/>
-                            <constraint firstItem="ZlU-TR-PIY" firstAttribute="centerX" secondItem="ont-K0-IRc" secondAttribute="centerX" id="Y9h-Lp-9lD"/>
+                            <constraint firstItem="HXq-Li-wSz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Mmq-fn-eEu"/>
+                            <constraint firstItem="ont-K0-IRc" firstAttribute="top" secondItem="HXq-Li-wSz" secondAttribute="bottom" constant="8" id="V1c-vB-nzD"/>
                             <constraint firstItem="udM-vW-Oru" firstAttribute="top" secondItem="zDb-9R-SRp" secondAttribute="bottom" constant="14" id="dZh-5t-BfY"/>
                             <constraint firstItem="zDb-9R-SRp" firstAttribute="centerX" secondItem="ont-K0-IRc" secondAttribute="centerX" id="exb-2e-UZZ"/>
+                            <constraint firstItem="HXq-Li-wSz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mFU-gI-jq3"/>
+                            <constraint firstItem="HXq-Li-wSz" firstAttribute="centerX" secondItem="ont-K0-IRc" secondAttribute="centerX" id="pxQ-gw-QMA"/>
                             <constraint firstItem="udM-vW-Oru" firstAttribute="centerX" secondItem="ont-K0-IRc" secondAttribute="centerX" id="qzs-wl-YaK"/>
                         </constraints>
                     </view>
