@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C67DFF71D4D25E0001DCB45 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C67DFF61D4D25E0001DCB45 /* MapKit.framework */; };
 		4CF98BF11D46338B00C35659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF98BF01D46338B00C35659 /* AppDelegate.swift */; };
 		4CF98BF61D46338B00C35659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF98BF41D46338B00C35659 /* Main.storyboard */; };
 		4CF98BF81D46338B00C35659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF98BF71D46338B00C35659 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C67DFF61D4D25E0001DCB45 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4CF98BED1D46338B00C35659 /* temperature converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "temperature converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF98BF01D46338B00C35659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CF98BF51D46338B00C35659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C67DFF71D4D25E0001DCB45 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 		4CF98BE41D46338B00C35659 = {
 			isa = PBXGroup;
 			children = (
+				4C67DFF61D4D25E0001DCB45 /* MapKit.framework */,
 				4CF98BEF1D46338B00C35659 /* temperature converter */,
 				4CF98BEE1D46338B00C35659 /* Products */,
 			);
@@ -286,6 +290,7 @@
 				4CF98C011D46338B00C35659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
