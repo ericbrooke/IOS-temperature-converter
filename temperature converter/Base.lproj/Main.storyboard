@@ -93,10 +93,6 @@
         <scene sceneID="tlQ-0y-LAy">
             <objects>
                 <viewController id="0FY-ya-Zmo" customClass="MapViewController" customModule="temperature_converter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="HkD-dU-1Zi">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="4hp-Ah-VMM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABT-ff-DAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
