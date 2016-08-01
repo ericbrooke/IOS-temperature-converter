@@ -18,8 +18,13 @@ class MapViewController: UIViewController {
         
         view = mapView
         
+        let standardString = NSLocalizedString("Standard", comment: "Standard map view")
+        let satelliteString
+            = NSLocalizedString("Satellite", comment: "Satellite map view")
+        let hybridString = NSLocalizedString("Hybrid", comment: "Hybrid map view")
+        
         let segmentControl
-            = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
+            = UISegmentedControl(items: [standardString, satelliteString, hybridString])
         segmentControl.backgroundColor
             = UIColor.whiteColor().colorWithAlphaComponent(0.5)
         segmentControl.selectedSegmentIndex = 0

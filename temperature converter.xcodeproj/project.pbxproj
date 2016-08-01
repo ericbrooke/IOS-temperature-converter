@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C67DFF71D4D25E0001DCB45 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C67DFF61D4D25E0001DCB45 /* MapKit.framework */; };
 		4C67DFF91D4D2D55001DCB45 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C67DFF81D4D2D55001DCB45 /* MapViewController.swift */; };
+		4CE2A01D1D4EDA47007994A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CE2A01F1D4EDA47007994A1 /* Localizable.strings */; };
 		4CF98BF11D46338B00C35659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF98BF01D46338B00C35659 /* AppDelegate.swift */; };
 		4CF98BF61D46338B00C35659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF98BF41D46338B00C35659 /* Main.storyboard */; };
 		4CF98BF81D46338B00C35659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF98BF71D46338B00C35659 /* Assets.xcassets */; };
@@ -19,6 +20,12 @@
 /* Begin PBXFileReference section */
 		4C67DFF61D4D25E0001DCB45 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4C67DFF81D4D2D55001DCB45 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4CE2A0181D4ED518007994A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		4CE2A0191D4ED596007994A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		4CE2A01A1D4ED596007994A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4CE2A01E1D4EDA47007994A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CE2A0201D4EDA74007994A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CE2A0211D4EDA75007994A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4CF98BED1D46338B00C35659 /* temperature converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "temperature converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF98BF01D46338B00C35659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CF98BF51D46338B00C35659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +50,7 @@
 		4CF98BE41D46338B00C35659 = {
 			isa = PBXGroup;
 			children = (
+				4CE2A01F1D4EDA47007994A1 /* Localizable.strings */,
 				4C67DFF61D4D25E0001DCB45 /* MapKit.framework */,
 				4CF98BEF1D46338B00C35659 /* temperature converter */,
 				4CF98BEE1D46338B00C35659 /* Products */,
@@ -113,6 +121,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 4CF98BE41D46338B00C35659;
 			productRefGroup = 4CF98BEE1D46338B00C35659 /* Products */;
@@ -130,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF98BFB1D46338B00C35659 /* LaunchScreen.storyboard in Resources */,
+				4CE2A01D1D4EDA47007994A1 /* Localizable.strings in Resources */,
 				4CF98BF81D46338B00C35659 /* Assets.xcassets in Resources */,
 				4CF98BF61D46338B00C35659 /* Main.storyboard in Resources */,
 			);
@@ -151,10 +161,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4CE2A01F1D4EDA47007994A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CE2A01E1D4EDA47007994A1 /* Base */,
+				4CE2A0201D4EDA74007994A1 /* es */,
+				4CE2A0211D4EDA75007994A1 /* en */,
+			);
+			name = Localizable.strings;
+			path = "temperature converter";
+			sourceTree = "<group>";
+		};
 		4CF98BF41D46338B00C35659 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4CF98BF51D46338B00C35659 /* Base */,
+				4CE2A0181D4ED518007994A1 /* en */,
+				4CE2A0191D4ED596007994A1 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -163,6 +186,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4CF98BFA1D46338B00C35659 /* Base */,
+				4CE2A01A1D4ED596007994A1 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
